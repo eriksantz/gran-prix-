@@ -1,0 +1,244 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Cor de fundo suave */
+}
+
+/* Barra superior com logo */
+.top-bar {
+    background-color: #2C3E50;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Garante que a logo e os botões fiquem separados */
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+.top-bar .logo {
+    width: 50px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+}
+
+.top-bar-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-bar button {
+    background-color: #2C3E50;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Navegação */
+nav {
+    background-color: #6A7F3D;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os itens de navegação */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; /* Adiciona um padding para os links ficarem bem espaçados */
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #2C3E50; /* Altera a cor de fundo ao passar o mouse */
+    border-radius: 5px; /* Deixa os cantos arredondados ao passar o mouse */
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner img {
+    width: 100%; /* Ajusta a imagem para ocupar toda a largura do container */
+    height: 300px; /* Ajuste de altura para a imagem */
+    object-fit: cover; /* Garante que a imagem cubra a área do banner sem distorcer */
+    object-position: center; /* Centraliza a imagem dentro da área do banner */
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+}
+
+/* Seção 'Sobre' */
+.about {
+    background-color: #6A7F3D;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about button {
+    background-color: #2C3E50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilo para o formulário de cadastro */
+.cadastro-form {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.cadastro-form .form-group {
+    margin-bottom: 20px;
+}
+
+.cadastro-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cadastro-form input,
+.cadastro-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.cadastro-form input:focus,
+.cadastro-form textarea:focus {
+    border-color: #6A7F3D;
+    outline: none;
+}
+
+.cadastro-form .submit-btn {
+    background-color: #6A7F3D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.cadastro-form .submit-btn:hover {
+    background-color: #2C3E50;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+/* Contato - Estilos */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact h2 {
+    color: #2C3E50;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    color: #6A7F3D;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #6A7F3D;
+    outline: none;
+}
+
+.contact-form .submit-btn {
+    background-color: #6A7F3D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form .submit-btn:hover {
+    background-color: #2C3E50;
+}
